@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controle de Gastos</title>
+
+    <link rel="stylesheet" type="text/CSS" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/CSS" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="secaoInsercaoInformacoes">
+        <h1>Controle de Gastos</h1>
+        <p class="tresPontos">...</p>
+
+        <div class="formularioEntradaOrcamento">
+          <h2>Total Orçamento</h2>
+          <input type="text" />
+          <button>Calcula</button>
+        </div>
+
+        <div class="formularioEntradaDespesa">
+          <h2>Nome Despesa</h2>
+          <input type="text" class="formularioEntradaDespesa_nome" />
+
+          <h2>Valor Despesa</h2>
+          <input type="number" class="formularioEntradaDespesa_valor" />
+
+          <button>Adicionar Despesa</button>
+        </div>
+
+        <div class="conteinerDespesas">
+          <div class="conteinerDespesas_cabecalho">
+            <p class="tituloDespesa">Título Despesa</p>
+            <p>Valor Despesa</p>
+          </div>
+
+          <ul class="conteinerDespesas_lista"></ul>
+        </div>
+      </section>
+
+      <section class="secaoImpressaoResultados">
+        <div class="secaoImpressaoResultados_orcamento">
+          <h3>Orçamento</h3>
+          <p>+ R$ 0</p>
+        </div>
+        <div class="secaoImpressaoResultados_despesas">
+          <h3>Despesas</h3>
+          <p>- R$ 0</p>
+        </div>
+        <div class="secaoImpressaoResultados_saldo">
+          <h3>Saldo</h3>
+          <p>R$ 0</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
